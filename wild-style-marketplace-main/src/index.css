@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 13%;
+
+    --primary: 282 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 282 100% 96%;
+    --secondary-foreground: 282 100% 45%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 282 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 282 100% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom marketplace colors */
+    --price: 142 76% 36%;
+    --price-old: 0 0% 60%;
+    --discount: 0 84% 60%;
+    --rating: 45 100% 51%;
+    --header-gradient-start: 282 100% 60%;
+    --header-gradient-end: 260 100% 50%;
+    --promo-pink: 330 100% 60%;
+    --promo-cyan: 180 100% 45%;
+    --delivery-bg: 282 100% 95%;
+    --delivery-text: 282 100% 45%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 282 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 282 100% 95%;
+    --sidebar-accent-foreground: 282 100% 45%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 282 100% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 282 100% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 282 50% 20%;
+    --secondary-foreground: 282 100% 80%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 282 100% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 282 100% 60%;
+
+    --price: 142 76% 45%;
+    --price-old: 0 0% 50%;
+    --discount: 0 84% 55%;
+    --rating: 45 100% 51%;
+    --header-gradient-start: 282 100% 50%;
+    --header-gradient-end: 260 100% 40%;
+    --promo-pink: 330 100% 55%;
+    --promo-cyan: 180 100% 40%;
+    --delivery-bg: 282 50% 20%;
+    --delivery-text: 282 100% 75%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 282 100% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 282 50% 20%;
+    --sidebar-accent-foreground: 282 100% 80%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 282 100% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-price {
+    color: hsl(var(--price));
+  }
+  
+  .text-price-old {
+    color: hsl(var(--price-old));
+  }
+  
+  .bg-header-gradient {
+    background: linear-gradient(90deg, hsl(var(--header-gradient-start)), hsl(var(--header-gradient-end)));
+  }
+  
+  .bg-promo-gradient {
+    background: linear-gradient(135deg, hsl(var(--promo-pink)), hsl(var(--promo-cyan)));
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}

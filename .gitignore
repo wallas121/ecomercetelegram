@@ -1,0 +1,5 @@
+node_modules
+.env
+.DS_Store
+wild-style-marketplace-main/node_modules
+wild-style-marketplace-main/dist

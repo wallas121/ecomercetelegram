@@ -25,9 +25,7 @@ if [ -d "telegram-ecommerce" ]; then
 else
     echo "📂 Clonando repositório..."
     # ATENÇÃO: O usuário deve substituir este link pelo link do repo dele
-    echo "⚠️  Por favor, digite o link do seu repositório GitHub (ex: https://github.com/usuario/repo.git):"
-    read REPO_URL
-    git clone $REPO_URL telegram-ecommerce
+    git clone https://github.com/wallas121/ecomercetelegram.git telegram-ecommerce
     cd telegram-ecommerce
 fi
 

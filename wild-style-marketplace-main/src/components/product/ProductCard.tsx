@@ -114,7 +114,7 @@ const ProductCard = ({ product, className }: ProductCardProps) => {
           size="sm"
         >
           <ShoppingCart className="h-4 w-4 mr-2" />
-          У кошик
+          Adicionar
         </Button>
       </div>
     </div>
